@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>进阶技巧 - 漂移驴车S3赛季中文操作说明</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u8fdb\u9636\u6280\u5de7";
+        var mkdocs_page_input_path = "operation/drive_tips.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> 漂移驴车S3赛季中文操作说明
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">首页</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../race_background/race_bg_info/">赛事背景</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../hardware/hardware_arch/">硬件架构</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../mechanic/mechanic_arch/">机械架构</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../software/software_arch/">软件架构</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../online/">线下比赛</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../dk_process/">操作流程</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">进阶技巧</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_2">数据采集</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">数据优化</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">附加部件</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../aboutus/">关于我们</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">漂移驴车S3赛季中文操作说明</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">进阶技巧</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1">技巧汇总</h1>
+<p>其中的很多技巧是在不断的试错中尝试出来的.希望这些技巧能够帮助各位快速训练出准确的模型.</p>
+<h2 id="_2">数据采集</h2>
+<p>采集数据的时候,数据的颗粒度如油门,角度(throttle, angle)这两个参数会对未来生成的模型产生很大的影响.因此数据采集的时候,如果使用<code>RC
+枪控</code>的数据曲线要好于使用 PS3/XBOX 手柄,而使用手柄的数据会要比直接使用网页控制端的数据曲线好.</p>
+<p>采集数据时, 在网页端可以设置限制最大速度,初级用户最好将油门限制在 30~40%之间,操作会更加平稳,随着熟练度的提高,逐步调整油门的大小,直到全油门漂移过弯.</p>
+<p>在模拟器上驾驶的时候,在进入弯道时,松开油门,轻点刹车并转向可以实现漂移过弯的效果,前提是油门限制为0,速度为默认最大速度时.</p>
+<ul>
+<li>RC 操作技巧</li>
+</ul>
+<p>RC枪控的扳机和转轮分别对应<code>油门</code>和<code>转向</code>.(throttle 和 angle)</p>
+<p>在使用 RC 枪控操作驴车时,请注意不要猛的触发扳机,或者是猛打转向, 尽量请打方向,避免<code>弹轮儿</code> 情况出现.</p>
+<blockquote>
+<p><code>弹轮儿</code>
+意思是扭转方向轮到某个位置,顺手松开使其以原有的回弹力反弹回原位,这样会产生数据波动尖峰,
+不利于数据模型的训练.</p>
+</blockquote>
+<h2 id="_3">数据优化</h2>
+<p>在数据采集完成后,可以通过在命令行中输入:</p>
+<pre><code class="language-bash">donkey ui
+</code></pre>
+<p>启动<code>donkey ui</code> 的图形化界面进行数据的筛选, 参数的选择和模型类型选择,并且还可以通过剔除不好的记录信息,从而使整个数据集的数据一致性更好,训练的模型也会更加的稳定.</p>
+<p><img alt="DONKEY_UI_1" src="../images/ui-tub-manager.png" /></p>
+<p><img alt="DONKEY_UI_2" src="../images/ui-tub-manager-2.png" /></p>
+<p><img alt="DONKEY_UI_3" src="../images/ui-trainer.png" /></p>
+<p><img alt="DONKEY_UI_4" src="../images/ui-pilot-arena.png" /></p>
+<p><a href="https://docs.donkeycar.com/utility/ui/">DonkeyDocs Official</a></p>
+<iframe src="//player.bilibili.com/player.html?aid=680244140&bvid=BV1jS4y1u7Qt&cid=470999885&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="height:391px;width:696px"> </iframe>
+
+<h2 id="_4">附加部件</h2>
+<p><b>什么是 Part</b><br></p>
+<blockquote>
+<p>A part is a Python class that wraps a functional component of a vehicle.
+一个 part 就是一个 python 的类, 可以添加一个功能到我们的驴车上.
+这些包括:</p>
+</blockquote>
+<ul>
+<li>Sensors - 摄像头, 雷达, 速度计, GPS </li>
+<li>Actuators - 电机控制类 </li>
+<li>Pilots - 道路检测, 克隆模型等等功能.</li>
+<li>Controllers - 基于网页或者蓝牙.</li>
+<li>Stores - Tub, 或者存储数据的方法</li>
+</ul>
+<p>下面是一个示例显示如何使用 PiCamera part 去在每个驾驶的循环中发布一个图片到"cam/img" 通道.</p>
+<pre><code class="language-python">V = dk.Vehicle()
+
+# 创建并初始化camera part
+cam = PiCamera()
+
+#添加摄像头到vehicle.
+V.add(cam, outputs=['cam/img'])
+
+V.start()
+</code></pre>
+<p><b>剖析一个 part</b></br></p>
+<p>所有部件(part) 共享同一个共同的结构,因此他们都可以由车辆的实例驱动在整个程序运行状态中不断运行和更新数据.
+所有的部件都需要有一个"run" 或者" run_threaded" 功能,它有时候也需要<code>inputs=['单引号','逗号分割']</code>
+这种输入的格式,也会在调用的时候生成类似<code>outputs=['关键字', '逗号分割']</code>的输出数据.</p>
+<p>如果车的部件会抓取部分硬件资源信息, 类似摄像头和串口等设备, 在驴车停止的时候,那么它应该包含一个<code>shutdown</code> 的方法来释放资源.</p>
+<p>下面举个例子:  一个 part 接受一个数字,然后与一个随机数字完成乘法运算并返回结果.</p>
+<pre><code class="language-python">import random
+
+class RandPercent:
+    def run(self, x):
+        return x * random.random()
+</code></pre>
+<p>把这个类添加到 donkeycar 的 vehicle:</p>
+<pre><code class="language-python">V = dk.Vehicle()
+
+# initialize the channel value
+V.mem['const'] = 4
+
+# add the part to read and write to the same channel.
+V.add(RandPercent, inputs=['const'], outputs=['const'])
+
+V.start(max_loops=5)
+</code></pre>
+<p><b>部件线程化</b><br></p>
+<p>如果想要保证驴车运行的性能则需要保证 drive loop 必须保证在 10-30
+次/秒,(检测数据来自: <code>DRIVE_LOOP_HZ</code>, 这个配置来自你的配置文件(myconfig.py),默认值是 <code>20hz</code>)
+因此, 一些慢速的部件应该线程化(threaded)从而避免延长每个 drive loop 的时间.</p>
+<p>一个线程化的部件需要去定义方法去运行在独立的线程上, 并且方法在被调用的时候能够非常快的返回当前最新的数据.</p>
+<p>当你添加一个部件到车辆, 就是<code>V.add</code>之前, 创建的部件如果添加了<code>theaded = True</code> , 那么驴车主程序会调用部件的
+<code>run_threaded</code> 方法去替代<code>run</code>方法,目前你可以参考下面的例子来实现.</p>
+<p><code>V.add(RandPercent, inputs=['const'], outputs=['const'], threaded=True)</code></p>
+<p>一旦你有一个"run_threaded" 方法, donkey 就会自动去寻找一个"update"方法并且在它自己的线程中运行它, </p>
+<p>下面的例子是如何将<code>RandPercent</code> 部件线程化,如果这个部件需要运行一段时间才能完成的话,意思就是如果你的部件耗时长,就线程化,这样不会影响整个大循环.</p>
+<pre><code class="language-python">import random
+import time
+
+class RandPercent:
+    self.in = 0.0
+    self.out = 0.0
+    def run(self, x):
+        return x * random.random()
+        time.sleep(1)
+
+    def update(self):
+        # the function run in its own thread
+        while True:
+            self.out = self.run(self.in)
+
+    def run_threaded(self, x):
+        self.in = x
+        return self.out
+
+</code></pre>
+<ul>
+<li><code>part.run</code> : 方法是运行这个部件.</li>
+<li><code>part.run_threaded</code> : 如果部件线程化,那么驴车主循环会以线程方式运行这个部件.</li>
+<li><code>part.update</code> : 线程更新的方法</li>
+<li><code>part.shutdown</code> 关闭进程</li>
+</ul>
+<hr />
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../dk_process/" class="btn btn-neutral float-left" title="操作流程"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../aboutus/" class="btn btn-neutral float-right" title="关于我们">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../dk_process/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../aboutus/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
