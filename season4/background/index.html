@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Stop Sign检测 - 漂移驴车中文操作说明</title>
+    <title>赛事背景 - 漂移驴车中文操作说明</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Stop Sign\u68c0\u6d4b";
-        var mkdocs_page_input_path = "parts/stop_sign_detection.md";
+        var mkdocs_page_name = "\u8d5b\u4e8b\u80cc\u666f";
+        var mkdocs_page_input_path = "season4/background.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -40,12 +40,30 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption"><span class="caption-text">S4赛季</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../season4/">首页</a>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">首页</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../season4/background/">赛事背景</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">赛事背景</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_2">引言</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">故事背景</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_4">起源</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_5">社区文化</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_6">技术革新</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_7">赛季与挑战</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_8">结语</a>
+    </li>
+    </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../season4/hardware_arch/">硬件架构</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../hardware_arch/">硬件架构</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">S3赛季</span></p>
@@ -83,7 +101,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Stop Sign检测</li>
+          <li class="breadcrumb-item">S4赛季</li>
+      <li class="breadcrumb-item active">赛事背景</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -92,22 +111,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="stop-sign">Stop Sign检测</h1>
-<p>通过摄像头识别停止标识信息,如果检测到有停止标识, 驴车将<code>pilot/throttle</code> 将为0.
-并且会关联一个识别框到<code>cam/image_array</code>.</p>
-<hr />
-<h2 id="_1">设备需求</h2>
-<p>要使用这个 part,你需要准备 Intel NCS2, 二代神经棒:</p>
-<ul>
-<li><a href="https://">Intel NCS2 </a></li>
-</ul>
-<h2 id="_2">如何使用</h2>
-<p>在文档<code>myconfig.py</code>后添加:</p>
-<pre><code>STOP_SIGN_DETECTOR = True
-</code></pre>
+                <h1 id="_1">漂移驴车：速度与激情的传说</h1>
+<h2 id="_2">引言</h2>
+<p>在遥远的东方，有一个被速度与激情所统治的神秘社区——漂移驴车社区。这里，每个成员都是对速度有着无尽追求的冒险家，他们驾驶着经过精心改装的驴车，穿梭在崎岖的山路和繁华的城市之间，用他们的技巧和智慧征服每一个弯道。</p>
+<h2 id="_3">故事背景</h2>
+<h3 id="_4">起源</h3>
+<p>漂移驴车社区起源于一群对传统RC遥控车感到厌倦的年轻人。他们渴望更多的自由和挑战，于是开始尝试将驴车改装成能够进行高速漂移的赛车。随着时间的推移，这个小小的改装爱好逐渐演变成了一个充满激情和竞争的社区。</p>
+<h3 id="_5">社区文化</h3>
+<p>漂移驴车社区不仅仅是一个赛车组织，它更是一种文化的象征。在这里，每个人都相信“速度就是自由”，他们通过不断地改装和优化他们的驴车，来追求更快的速度和更高的技巧。</p>
+<h3 id="_6">技术革新</h3>
+<p>随着科技的发展，漂移驴车社区也在不断地进行技术革新。他们采用了美嘉欣的RC遥控车底盘，并自主研发了高性能主板，将Lattepanda MU的核心模块嵌入其中。这些技术的进步使得驴车的性能得到了质的飞跃。</p>
+<h3 id="_7">赛季与挑战</h3>
+<p>每个赛季，漂移驴车社区都会举办各种比赛和挑战，从城市街道到荒野山路，从白天到黑夜。每个成员都在这些比赛中展示他们的技术和改装成果，同时也在不断地学习和进步。</p>
+<h2 id="_8">结语</h2>
+<p>漂移驴车社区的故事还在继续，每个成员都在用自己的方式书写着速度与激情的传奇。他们相信，只要心中有速度，就没有什么是不可能的。让我们一起加入这个社区，感受速度带来的无限魅力吧！</p>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../" class="btn btn-neutral float-left" title="首页"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../hardware_arch/" class="btn btn-neutral float-right" title="硬件架构">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
 
   <hr/>
 
@@ -129,6 +153,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
+      <span><a href="../" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../hardware_arch/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

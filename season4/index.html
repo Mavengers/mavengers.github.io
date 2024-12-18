@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>关于我们 - 漂移驴车中文操作说明</title>
+    <title>首页 - 漂移驴车中文操作说明</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "\u5173\u4e8e\u6211\u4eec";
-        var mkdocs_page_input_path = "aboutus.md";
+        var mkdocs_page_name = "\u9996\u9875";
+        var mkdocs_page_input_path = "season4/index.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -40,16 +40,40 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption"><span class="caption-text">S4赛季</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../season4/">首页</a>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">首页</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1">概览</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">主要特点</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1">1. 自主研发主板</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2">2. 性能提升</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3">3. 电源管理优化</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4">4. 布局与走线</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#5-led">5. 红外LED与鸟瞰方案</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#6-ws2812">6. 电池接口与WS2812</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#7-diy">7. DIY与扩展性</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">结语</a>
+    </li>
+    </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../season4/background/">赛事背景</a>
+                  <li class="toctree-l1"><a class="reference internal" href="background/">赛事背景</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../season4/hardware_arch/">硬件架构</a>
+                  <li class="toctree-l1"><a class="reference internal" href="hardware_arch/">硬件架构</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">S3赛季</span></p>
-              <ul class="current">
+              <ul>
                   <li class="toctree-l1"><a class="reference internal" href="..">首页</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../race_background/race_bg_info/">赛事背景</a>
@@ -66,9 +90,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../operation/drive_tips/">进阶技巧</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">关于我们</a>
-    <ul class="current">
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../aboutus/">关于我们</a>
                   </li>
               </ul>
       </div>
@@ -85,8 +107,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">S3赛季</li>
-      <li class="breadcrumb-item active">关于我们</li>
+          <li class="breadcrumb-item">S4赛季</li>
+      <li class="breadcrumb-item active">首页</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -95,20 +117,52 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="_1">关于我们</h1>
-<p><img alt="aboutus1" src="../race_background/images/race3.png" /></p>
-<p><img alt="aboutus2" src="../race_background/images/race4.png" /></p>
+                <h1 id="s4">漂移驴车社区S4赛季说明文档</h1>
+<h2 id="_1">概览</h2>
+<p>欢迎来到漂移驴车社区S4赛季！在这个赛季中，我们继续采用美嘉欣的RC遥控车底盘，并引入了多项创新技术，以提升性能和用户体验。以下是我们S4赛季的主要特点和优化设计。</p>
+<h2 id="_2">主要特点</h2>
+<h3 id="1">1. 自主研发主板</h3>
 <ul>
-<li>黄玺锦 Demi</li>
-<li>梁旻昊 Jasper</li>
-<li>江炜婕 Rebecca</li>
+<li><strong>核心模块集成</strong>：我们自主研发的主板可以方便地将Lattepanda MU的核心模块嵌入其中，实现高性能的计算能力。</li>
+<li><strong>优化设计</strong>：主板经过精心设计，以实现更优的性能和更便捷的维护。</li>
 </ul>
-<hr />
+<h3 id="2">2. 性能提升</h3>
+<ul>
+<li><strong>ESP32芯片</strong>：使用ESP32芯片，实现更快速的地盘性能提升，为驴车提供更敏捷的响应。</li>
+<li><strong>M.2 SSD硬盘接入</strong>：新增M.2 SSD硬盘接口，提供更大的存储空间和更快的数据读写速度。</li>
+<li><strong>Wi-Fi 6模块接口</strong>：集成Wi-Fi 6模块接口，支持更快的无线网络连接。</li>
+</ul>
+<h3 id="3">3. 电源管理优化</h3>
+<ul>
+<li><strong>电源管理</strong>：进行了电源管理优化，提高了驴车的能源效率和电池寿命。</li>
+<li><strong>I2C复用</strong>：实现了I2C复用，简化了电路设计，提高了系统的可靠性。</li>
+</ul>
+<h3 id="4">4. 布局与走线</h3>
+<ul>
+<li><strong>重新设计</strong>：重新设计了走线和布局，使得主板更加紧凑，安装更加方便。</li>
+<li><strong>接收机接入</strong>：改进了接收机的接入方式，使得安装更加简便。</li>
+</ul>
+<h3 id="5-led">5. 红外LED与鸟瞰方案</h3>
+<ul>
+<li><strong>红外LED</strong>：板载红外LED，为夜间或低光环境下的操作提供便利。</li>
+<li><strong>硬件支持</strong>：针对鸟瞰的方案提供了硬件支持，增强了驴车的导航能力。</li>
+</ul>
+<h3 id="6-ws2812">6. 电池接口与WS2812</h3>
+<ul>
+<li><strong>电池接口</strong>：更换了更小巧的XT30电池接口，提高了驴车的便携性。</li>
+<li><strong>板载WS2812</strong>：板载WS2812 LED，可以通过编程自定义车辆状态，增加视觉识别度。</li>
+</ul>
+<h3 id="7-diy">7. DIY与扩展性</h3>
+<ul>
+<li><strong>更多电源接口</strong>：添加了更多的电源接口，方便驴友自行DIY，加入更多传感器或外设。</li>
+</ul>
+<h2 id="_3">结语</h2>
+<p>漂移驴车社区S4赛季的驴车不仅仅是一辆遥控车，它是技术创新和用户体验的完美结合。我们期待与您一起探索更多的可能性，共同推动遥控车技术的发展。感谢您对漂移驴车社区的支持，让我们在S4赛季一起创造更多精彩！</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../operation/drive_tips/" class="btn btn-neutral float-left" title="进阶技巧"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="background/" class="btn btn-neutral float-right" title="赛事背景">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -131,8 +185,8 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../operation/drive_tips/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
+      <span><a href="background/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
